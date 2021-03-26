@@ -35,5 +35,9 @@ class Player {
         })
     }
 
+    removePlayers(){
+        database.ref('players').remove();
+    }
+
     
 }
