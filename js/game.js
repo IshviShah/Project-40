@@ -54,6 +54,7 @@ class Game{
                      
                      players[index -1].x = x;
                      players[index - 1].y = y;
+                     
                        
                      if(index === player.index){
                          
@@ -67,11 +68,11 @@ class Game{
                      //text to display player score.
                      fill("white");
                      textSize(25);
-                     text("Player1 Score: "+player1Score);
+                     text("Player1 Score: "+player1Score,50,50);
 
                      fill("white");
                      textSize(25);
-                     text("Player2 Score: "+player2Score);
+                     text("Player2 Score: "+player2Score,50,100);
                  }
                 
                 
@@ -113,7 +114,7 @@ class Game{
                             fruitGroup.get(i).destroy();
                             player.score =player.score+1; 
                             player.update() 
-                            console.log(score);
+                            //console.log(score);
                         } 
                     }
                      // add the condition to calculate the score. and use update ti update the values in the database.
